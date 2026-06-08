@@ -1,0 +1,103 @@
+/* Toute la page : couleurs de base + centrage du contenu */
+body {
+    background-color: rgba(31, 31, 30);            /* fond sombre */
+    color: #f0f0f0;                       /* couleur du texte par défaut */
+    font-family: system-ui, sans-serif;  /* police propre */
+
+    /* Flexbox : centre tout le contenu horizontalement ET verticalement */
+    display: flex;
+    flex-direction: column;   /* empile les éléments en colonne */
+    align-items: center;      /* centre horizontalement */
+    justify-content: center;  /* centre verticalement */
+    min-height: 100vh;        /* le body occupe toute la hauteur de l'écran */
+    margin: 0;                /* enlève la marge par défaut du navigateur */
+    gap: 20px;                /* espace entre les éléments empilés */
+}
+
+/* Le titre */
+h1 {
+    color: #ffffff;   /* blanc */
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Wrapper flex pour aligner le champ résultat et le bouton copier */
+#resultat-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Le champ qui affiche le mot de passe */
+#resultat {
+    background-color: #2a2a2a;
+    color: #f0f0f0;
+    border: 1px solid #444;  /* bordure fine grise */
+    border-radius: 8px;      /* coins arrondis */
+    padding: 12px;
+    font-size: 1.1rem;
+    text-align: center;
+    width: 370px;
+}
+
+/* Le bouton generer*/
+#generer {
+    background-color: #ffffff;  /* orange */
+    color: #1a1a1a;             /* texte sombre sur fond orange */
+    border: none;               /* pas de bordure */
+    border-radius: 8px;
+    padding: 12px 28px;
+    font-size: 1.5rem;
+    cursor: pointer;            /* curseur "main" au survol */
+    transition: background-color 0.2s;  /* transition douce de couleur */
+}
+
+/* Le bouton copier*/
+#copier {
+    background-color: #ffffff;  /* orange */
+    color: #1a1a1a;             /* texte sombre sur fond orange */
+    border: none;               /* pas de bordure */
+    border-radius: 8px;
+    padding: 12px 28px;
+    font-size: 1.5rem;
+    cursor: pointer;            /* curseur "main" au survol */
+    transition: background-color 0.2s;  /* transition douce de couleur */
+}
+
+/* L'état du bouton quand la souris est dessus */
+#generer:hover {
+    background-color: #F7931A;  /* orange plus clair au survol */
+}
+#copier:hover {
+    background-color: #F7931A;  /* orange plus clair au survol */
+}
+/* Le curseur de longueur (la barre) */
+#longueur {
+    -webkit-appearance: none;  /* retire le style natif du navigateur (Chrome/Safari/Edge) */
+    appearance: none;          /* version standard */
+    width: 280px;
+    height: 6px;               /* épaisseur de la barre */
+    background: #444;          /* couleur de la barre */
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* La poignée — Chrome, Safari, Edge */
+#longueur::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    background: #ff7a00;  /* orange, raccord avec le reste */
+    border-radius: 50%;   /* 50% = cercle parfait */
+    cursor: pointer;
+}
+
+/* La poignée — Firefox */
+#longueur::-moz-range-thumb {
+    width: 18px;
+    height: 18px;
+    background: #ff7a00;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
