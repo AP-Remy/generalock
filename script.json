@@ -6,12 +6,15 @@ const copieur = document.getElementById("copier");
 const affichage = document.getElementById("affichage");
 
 bouton.addEventListener("click", function() {
-let resultat = "";
+
 const caracteres = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%";
 const taille = Number(longueur.value);
+const valeurs = new Uint32Array(taille);
+crypto.getRandomValues(valeurs);
+let resultat = "";
 
 for (let i = 0; i < taille; i++){
-    const index = Math.floor(Math.random() * caracteres.length);
+    const index = valeurs[i] % caracteres.length;
     resultat += caracteres[index]
 }
 champ.value = resultat;
