@@ -1,8 +1,8 @@
-# 🔐 Generalock
+# Generalock
 
 Générateur de mots de passe simple, rapide et sécurisé — directement dans le navigateur, sans installation.
 
-🔗 Démo en ligne : https://ap-remy.github.io/generalock/
+Démo en ligne : https://ap-remy.github.io/generalock/
 
 ## Fonctionnalités
 
