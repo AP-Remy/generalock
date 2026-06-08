@@ -19,11 +19,11 @@ Générateur de mots de passe simple, rapide et sécurisé — directement dans 
 
 ## Lancer en local
 
-1. Cloner le dépôt :
+Pour Cloner le dépôt :
    ```bash
    git clone https://github.com/ap-remy/generalock.git
    ```
-2. Ouvrir `index.html` dans un navigateur — ou, dans VS Code, via l'extension Live Server.
+
 
 
 Premier projet web réalisé pour apprendre les fondamentaux du front-end : structure HTML, logique JavaScript, mise en forme CSS et déploiement.
